@@ -70,3 +70,25 @@ textarea {
 
   outline: 0px solid transparent;
 }
+
+.wordCount {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+
+.wordCount div {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+
+  font-size: 14px;
+  background-color: #1b1b1b;
+  padding: 7px;
+  padding-left: 10px;
+  border-top-left-radius: 20px;
+
+  user-select: none;
+  cursor: default;
+}
