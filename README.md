@@ -6,7 +6,7 @@ This project is fast, cross-platform, and resource-efficient. The goal of Orbit 
 
 Design and features inspired by [Fextify](https://github.com/face-hh/fextify), made by [FaceDev](https://www.youtube.com/watch?v=iGsauIuaXXA).
 
-![Logo](src-tauri/icons/full_with_text.png)
+![Logo](src-tauri/icons/650x650-with-text.png)
 
 ## Roadmap
 
