@@ -22,6 +22,7 @@ textarea {
   flex-direction: column;
   align-items: center;
 
+  height: 100vh;
   padding: 20px;
 }
 
@@ -43,17 +44,18 @@ textarea {
   width: 40%;
 }
 
-
 #textDiv {
-  margin-bottom: 400px;
+  margin-bottom: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   width: 60%;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .text {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 10px;
   box-sizing: border-box;
   width: 95%;
