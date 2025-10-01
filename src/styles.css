@@ -1,11 +1,11 @@
-body{
+/* === Base Styles === */
+body {
   background-color: #041023;
 }
 
-
 textarea {
   border: none;
-  overflow: auto;
+  overflow: hidden;
   outline: none;
   resize: none;
 
@@ -14,64 +14,68 @@ textarea {
   box-shadow: none;
 }
 
-
-
+/* === Layout Containers === */
 #container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   height: 100vh;
   padding: 20px;
 }
 
-
-#title {
-  margin-bottom: 10px;
-  min-width: 1ch;
-  height: 10vh;
-  font-size: 40px;
-  line-height: 40px;
-  padding: 20px;
-  width: 100%;
-}
-
 #titleDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 60%;
 }
 
 #textDiv {
-  margin-bottom: 100px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  width: 60%;
+
+  width: 80%;
   flex: 1 1 auto;
   min-height: 0;
+  margin-bottom: 100px;
+}
+
+
+/* === Specific Elements === */
+#title {
+  width: 100%;
+  min-width: 1ch;
+  height: 10vh;
+  margin-bottom: 10px;
+  padding: 20px;
+
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .text {
+  width: 95%;
   flex: 1 1 auto;
+  min-height: 0;
   padding: 10px;
   box-sizing: border-box;
-  width: 95%;
 
   font-size: 20px;
   font-weight: 400;
+  line-height: 34px;
 
   background-color: #161616;
   border-radius: 10px;
   color: #f6f6f6;
 
-  line-height: 34px;
-
   outline: 0px solid transparent;
 }
 
+
+/* === UI Extras === */
 .wordCount {
   position: fixed;
   bottom: 0;
