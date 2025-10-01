@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #041023;
+    --menu-primary-color: #1b1b1b;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.text {
+    background-color: var(--menu-primary-color);
+    color: var(--text-color);
+}
+
+/* UI Extras */
+
+.wordCount {
+    color: var(--text-color);
+}
+
+.wordCount div {
+    background-color: var(--menu-primary-color);
+}
