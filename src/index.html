@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/themes/default.css" />
+    <link id="currentTheme" rel="stylesheet" href="/themes/default.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbit Text Editor</title>
-    <script type="module" src="main.js" defer></script>
-    <script type="module" src="utils.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
+    <script type="module" src="/commandhandler.js" defer></script>
+    <script type="module" src="/utils.js" defer></script>
   </head>
 
   <body>
@@ -20,10 +21,20 @@
       <div id="textDiv">
         <textarea class="text" id="main">Hello World!</textarea>
       </div>
-
-
-
     </main>
+
+    <div class="popupMenu hidden" id="themeMenu">
+      <h1 class="text">Themes</h1>
+      <div id="themeList">
+        <div class="theme" style="background-color: #041023; color: #ffffff;" onclick="changeTheme('/themes/default.css')">Default</div>
+        <div class="theme" style="background-color: #e8e1d2; color: #0f0f0f;" onclick="changeTheme('/themes/offwhite.css')">Off-White</div>
+        <div class="theme" style="background-color: #24c8db; color: #2f2f2f;" onclick="changeTheme('/themes/tauri.css')">Tauri</div>
+      </div>
+      <p class="text" id="themePath">/themes/default.css</p>
+    </div>
+
+
+
     <div class="wordCount">
       <div>
         <span id="words">0</span>

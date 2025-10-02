@@ -15,6 +15,11 @@ body {
 
 /* UI Extras */
 
+.popupMenu {
+    background-color: var(--menu-primary-color);
+    color: var(--text-color);
+}
+
 .wordCount {
     color: var(--text-color);
 }
